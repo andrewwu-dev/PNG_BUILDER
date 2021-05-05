@@ -1,6 +1,6 @@
 
 # PNG Builder
-A concurrency lab to use threads to download multiple images and concatenate them into one image using the producer-consumer approach. [PNG Structure](https://www.oreilly.com/library/view/png-the-definitive/9781565925427/17_chapter-08.html). A server provides several pieces of a full image and the program will attempt to add the IDAT data of each of those pieces together inorder to reproduce the full image.
+A concurrency lab to use threads to download multiple images and concatenate them into one image using the producer-consumer approach. [PNG Structure](https://www.oreilly.com/library/view/png-the-definitive/9781565925427/17_chapter-08.html). A server provides several pieces of a full image and the program will attempt to add the IDAT data of each of those pieces together inorder to reproduce the full image. The main file is paster2.c
 
 ## Process
 We'll concatenate images by adding PNG IDAT data received of each image downloaded from the server into one array and then using this info to write a .PNG file as output.
